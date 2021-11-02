@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">
+            <img src="../assets/mariusLogoWhite.png" alt="logoMarius">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html" class="navLinks">Home</a></li>
+                <li><a href="./education.html" class="navLinks">Education</a></li>
+                <li><a href="./experience.html" class="navLinks">Experience</a></li>
+                <li><a class="active" href="./contact.html" class="navLinks">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form id=contactForm enctype="text/plain">
+        <h2>Kontakt Meg</h2>
+        <label for="fname">Fornavn</label>
+        <input type="text" id="fname" placeholder="Ditt fornavn...">
+        
+        <label for="lname">Etternavn</label>
+        <input type="text" id="lname" placeholder="Ditt etternavn...">
+        
+            <label for="country">Hjemland</label>
+            <select id="country">
+                <option value="norway">Norge</option>
+                <option value="notnorway">Ikke Norge</option>
+                <option value="clarkie">Clark's Place</option>
+            </select>
+
+            <label for="message">Melding</label>
+            <textarea type="text" id="message" name="email" placeholder="Skriv her..." ></textarea>
+            <label for="email">Epost</label>
+            <input type="email" id="email" name="email" placeholder="Din epost..." ></input>
+            
+            <input type="submit" value="Submit" onclick="sendMail()">
+        
+        </form>
+    </div>
+    <div class=content>
+    </div>
+        <footer class="footer">
+        <div class="copyright">
+            <3 - Holmgang (2021 ©)
+        </div>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/mariusjohanholmjohansen/">
+                <img role="img" src="../assets/icons/linkedin2.png"></i>
+            </a>
+            <a href="https://www.facebook.com/MariusJHJohansen/">
+                <img role="img" src="../assets/icons/facebook.png"></i>
+            </a>
+            <a href="https://i.ibb.co/ZhVHd44/251704658-406964727769749-1613315657407317319-n.jpg">
+                <img role="img" src="../assets/icons/snapchat.png"></i>
+            </a>
+            <a href="https://www.instagram.com/urbangategutt/">
+                <img role="img" src="../assets/icons/instagram.png"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="../js/validEmail.js"></script>
+</body>
+</html>
